@@ -5,7 +5,7 @@ install:
 		pip install -r requirements.txt
 test:
 
-line:
+lint:
 	hadolint Dockerfile
 	pylint --disable=R,C,W1203 app.py
 all: install lint test
